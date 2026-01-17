@@ -1,6 +1,7 @@
-"use client";
 import Image from 'next/image';
 import React from 'react';
+import Add2Card from '../button/Add2Card';
+import Add2WishLish from '../button/Add2WishLish';
 
 export default function ItemDetailsPage({ item }) {
 
@@ -70,12 +71,8 @@ export default function ItemDetailsPage({ item }) {
 
                         {/* Action Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4 mt-auto">
-                            <button className="btn btn-primary flex-1 btn-lg shadow-lg text-white">
-                                Add to Cart
-                            </button>
-                            <button className="btn btn-outline btn-secondary flex-1 btn-lg">
-                                Add to Wishlist
-                            </button>
+                            <Add2Card />
+                            <Add2WishLish />
                         </div>
                     </div>
                 </div>
