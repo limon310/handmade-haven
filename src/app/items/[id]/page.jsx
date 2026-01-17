@@ -8,7 +8,6 @@ const page = async({params}) => {
     // console.log(item)
     return (
         <div>
-            details page
             <ItemDetailsPage item={item} />
         </div>
     );
