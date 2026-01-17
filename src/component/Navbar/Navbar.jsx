@@ -94,7 +94,7 @@ export default function Navbar() {
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-1 p-2 shadow bg-white text-secondary rounded-box w-52">
                         <li><Link href="/">Home</Link></li>
                         <li><Link href="/items">Items</Link></li>
-                        {isLoggedIn && <li><Link href="/dashboard">Dashboard</Link></li>}
+                        {isLoggedIn && <li><Link href="/add-item">Add Item</Link></li>}
                     </ul>
                 </div>
                 <Link href="/" className="text-xl font-serif font-bold tracking-wider text-white">
@@ -107,7 +107,7 @@ export default function Navbar() {
                     <li><Link href="/" className="hover:text-accent">Home</Link></li>
                     <li><Link href="/items" className="hover:text-accent">Items</Link></li>
                     {isLoggedIn && (
-                        <li><Link href="/dashboard" className="hover:text-accent">Dashboard</Link></li>
+                        <li><Link href="/add-item" className="hover:text-accent">Add Item</Link></li>
                     )}
                 </ul>
             </div>
