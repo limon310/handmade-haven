@@ -10,29 +10,29 @@ import WhyChooseUs from "@/component/home/WhyChooseUs";
 export default function Home() {
   return (
     <>
-    {/* banner */}
+      {/* banner */}
       <HeroBanner />
 
-    {/* feature category */}
-    <FeaturedCategories />
+      {/* WhyChooseUs section */}
+      <WhyChooseUs />
 
-    {/* trendign items */}
-    <Trending />
+      {/* feature category */}
+      <FeaturedCategories />
 
-    {/* ArtisanSpotlight section */}
-    <ArtisanSpotlight />
+      {/* trendign items */}
+      <Trending />
 
-    {/* HeritageStory section */}
-    <HeritageStory />
+      {/* ArtisanSpotlight section */}
+      <ArtisanSpotlight />
 
-    {/* WhyChooseUs section */}
-    <WhyChooseUs />
+      {/* HeritageStory section */}
+      <HeritageStory />
 
-    {/* Testimonials section */}
-    <Testimonials />
+      {/* Testimonials section */}
+      <Testimonials />
 
-    {/* Newsletter */}
-    <Newsletter />
-  </>
+      {/* Newsletter */}
+      <Newsletter />
+    </>
   );
 }
