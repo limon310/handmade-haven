@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function ItemCard({ item }) {
@@ -5,10 +6,17 @@ export default function ItemCard({ item }) {
         <div className="card bg-white shadow-md hover:shadow-2xl transition-all duration-300 border border-brand-accent/10 group">
             {/* Image Section */}
             <figure className="relative h-64 overflow-hidden">
-                <img
+                {/* <img
                     src={item.image}
                     alt={item.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                /> */}
+                <Image
+                    src={item.image}
+                    alt={item.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    width={300}
+                    height={180}
                 />
                 {/* Category Badge */}
                 <div className="absolute top-3 left-3">
